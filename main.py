@@ -1,18 +1,15 @@
-
-# Bug generating data type error:
-year=input("Type a year that needs to be checked. ") 
+# Bug : 
 
 
-if year%4==0:
-  if year%100==0:
-    if year%400==0:
-      print("Leap Year.") 
-    else:
-      print("Not Leap Year. ")
+for number in range(1,101):
+  if number%3==0 or number%5==0:
+    print("FizzBuzz")
+  if number%5==0:
+    print("Buzz") 
+  if number%3==0:
+    print("Fizz") 
   else:
-    print("Leap Year. ")      
-else:
-  print("Not Leap Year. ")           
+    print(number)       
 
 
 
@@ -21,17 +18,13 @@ else:
 
 
 
-# Debugging Completed:
-year=int(input("Type a year that needs to be checked. ")) 
-
-
-if year%4==0:
-  if year%100==0:
-    if year%400==0:
-      print("Leap Year.") 
-    else:
-      print("Not Leap Year. ")
+# Debugging completed:
+for number in range(1,101):
+  if number%3==0 and number%5==0:
+    print("FizzBuzz")
+  elif number%5==0:
+    print("Buzz") 
+  elif number%3==0:
+    print("Fizz") 
   else:
-    print("Leap Year. ")      
-else:
-  print("Not Leap Year. ")           
+    print(number)       
